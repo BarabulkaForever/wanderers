@@ -2,7 +2,8 @@
     "Actor": {},
     "Item": {
         "types": [
-            "weapon"
+            "weapon",
+            "rangeWeapon"
         ],
         "templates": {
             "itemDescription":{
@@ -10,6 +11,19 @@
             }
         },
         "weapon": {
+            "templates":["itemDescription"],
+            "attackAttribute" : "",
+            "attackSkill": "",
+            "attributesRequredToUse": [],
+            "skillesRequredToUse": [],
+            "minus":[],
+            "damage":"",
+            "range": "",
+            "weaponQuolities": [],
+            "gpCost": "",
+            "averageCost": ""
+        },
+        "rangeWeapon": {
             "templates":["itemDescription"],
             "attackAttribute" : "",
             "attackSkill": "",

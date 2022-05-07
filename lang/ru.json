@@ -2,9 +2,19 @@
     "wanderers" : {
         "weaponTypes" : {
             "none": "",
-            "swords" : "Мечи",
             "blades" : "Клинки",
-            "polearm" : "Древковое"
+            "polearm" : "Древковое",
+            "special" : "Особое",
+            "hidden" : "Скрытное",
+            "improvised" : "Импровизированное"
+        },
+        "rangeWeaponTypes" : {
+            "none": "",
+            "blackpowder" : "Тэппо",
+            "bow" : "Луки",
+            "crossbow" : "Арбалеты",
+            "throwing" : "Метательное",
+            "explosives" : "Взрывчатка"
         },
         "attackAttributes" : {
             "none": "",

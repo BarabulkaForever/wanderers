@@ -1,0 +1,63 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <div>
+            <h2><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h2>
+            <h3><textarea name="data.description">{{data.description}}</textarea></h3>
+        </div>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <th>{{localize "wanderers.weaponParameters.attribute"}}</th>
+                <th>{{localize "wanderers.weaponParameters.skill"}}</th>
+                <th>{{localize "wanderers.weaponParameters.attributesRequirement"}}</th>
+                <th>{{localize "wanderers.weaponParameters.skillsRequirement"}}</th>
+                <th>{{localize "wanderers.weaponParameters.penalty"}}</th>
+                <th>{{localize "wanderers.weaponParameters.damage"}}</th>
+                <th>{{localize "wanderers.weaponParameters.range"}}</th>
+                <th>{{localize "wanderers.weaponParameters.qualities"}}</th>
+                <th>{{localize "wanderers.weaponParameters.gpCost"}}</th>
+                <th>{{localize "wanderers.weaponParameters.averageCost"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="data.attackAttribute">
+                        {{#select data.attackAttribute}}
+                        {{#each config.attackAttributes as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <!-- todo: add skill dropdown -->
+                </td>
+                <td>
+                    <!-- todo: add attributes reqirenment -->
+                </td>
+                <td>
+                    <!-- todo: add skill reqirenment -->
+                </td>
+                <td>
+                    <!-- todo: add penalty -->
+                </td>
+                <td>
+                    <input name="data.damage" type="text" value="{{data.damage}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.range" type="text" value="{{data.range}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <!-- todo: add qualities -->
+                </td>
+                <td>
+                    <input name="data.gpCost" type="text" value="{{data.gpCost}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.averageCost" type="text" value="{{data.averageCost}}" data-dtype="Number"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
