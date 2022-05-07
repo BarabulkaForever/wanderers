@@ -1,0 +1,27 @@
+{
+    "wanderers" : {
+        "weaponTypes" : {
+            "none": "",
+            "swords" : "Мечи",
+            "blades" : "Клинки",
+            "polearm" : "Древковое"
+        },
+        "attackAttributes" : {
+            "none": "",
+            "weaponSkill" : "Weapon Skill",
+            "ballisticSkill" : "Ballistic Skill"
+        },
+        "weaponParameters" : {
+            "attribute" : "Атрибут",
+            "skill" : "Скилл",
+            "attributesRequirement" : "Требования к Атрибутам",
+            "skillsRequirement" : "Требования к Умениям",
+            "penalty" : "Штрафы за несоответвие",
+            "damage" : "Урон",
+            "range" : "Радиус",
+            "qualities" : "Свойства",
+            "gpCost" : "Стоймость в \"ОГ\"",
+            "averageCost" : "Средняя ценность"
+        }
+    }
+}

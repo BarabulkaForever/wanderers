@@ -1,0 +1,23 @@
+{
+    "name" : "wanderers",
+    "title" : "Za chto",
+    "description" : "Ostav' nadejdu vsyac suda vhodashiy",
+    "autor" : "BF",
+    "version" : 0.01,
+    "minimumCoreVersion" : "0.6.4",
+    "compatibleCoreVersion": "0.6.4",
+    "esmodules": ["main-wanderers.js"],
+    "styles": ["wanderers.css"],
+    "packs": [],
+    "languages": [
+        {
+            "lang" : "ru",
+            "name" : "Russian",
+            "path" : "lang/ru.json"
+        }
+    ],
+    "gridDistance": 1,
+    "gridUnits":"m",
+    "primaryTokenAttribute":"HP",
+    "initiative": "1d100 + @agBonus"
+}
